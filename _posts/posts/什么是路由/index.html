@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<title>
+    什么是路由 - Mysteryven&rsquo;s Blog
+</title>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.6462c34240368b7550fdd995726445214c2f5fd7da600076fe14673d57f05250.css" integrity="sha256-ZGLDQkA2i3VQ/dmVcmRFIUwvX9faYAB2/hRnPVfwUlA=" crossorigin="anonymous" media="screen">
+
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="什么是路由"/>
+<meta name="twitter:description" content=""/>
+
+<meta property="og:title" content="什么是路由" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mysteryven.com/_posts/posts/%E4%BB%80%E4%B9%88%E6%98%AF%E8%B7%AF%E7%94%B1/" />
+<meta property="article:published_time" content="2018-09-24T13:52:14+08:00" />
+<meta property="article:modified_time" content="2018-09-24T13:52:14+08:00" />
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-171080709-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+
+    
+    
+    
+    <title>
+        
+        什么是路由
+        
+    </title>
+</head>
+
+<body>
+    
+    
+    <header class="wrap flex-container">
+        <h1>什么是路由</h1>
+    </header>
+    
+    <main class="wrap">
+        
+        <article role="article" class="flex-container"><h2 id="什么是路由">什么是路由</h2>
+<p>根据路径展示给用户不同的页面就是路由，表现在后端方面的话，就是比如我们请求<code>www.mysteryven.com/page1</code>， 后端返回给我们<code>page1</code>所对应的页面，当我们请求<code>www.mysteryven.com/page2</code>，后端返回给我们<code>page2</code>对应的页面，在前端方面展示的话，可能就类似于切换 tab 的形式。通过用户的操作来展示给用户不同的『界面』,更通俗的讲，就是我们根据用户的点击来切换 UI！我也没就这么简单。</p>
+<h2 id="路由的作用">路由的作用</h2>
+<p>通过对路由的巧妙使用，我们能实现无刷新『切换页面』，非常方便我们构建单页面应用！好吧，其实是假的切换页面，另外呢还有一个功能，就是可以保存页面当前的状态然后分享出去，对方打开依然还保持着页面的状态。</p>
+<h2 id="原理">原理</h2>
+<p>我们先来模拟一下<code>vue-router</code>的原理。</p>
+<p>代码请看下面链接</p>
+<p>&ndash;&gt; <a href="https://mysterywz.xyz/Assignments/jquery-router/">link</a></p>
+<p>这里说明一下，这样的展示效果是没有实现刷新依然保存的那种效果，因为那个需要后端的配合，如果想和后端配合，也很简单，只需要在请求这几个路径时，让后端返回给你相同的页面就行了，具体页面的展示逻辑，需要我们前端来做。</p>
+<p>比如说我们可以写 Node.js 的一小段路由的代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">path</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;/&#39;</span> <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39;/tab1&#39;</span> <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39;tab1&#39;</span>) {
+        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">string</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">readFileSync</span>(.<span style="color:#f92672">/</span><span style="color:#a6e22e">index</span>.<span style="color:#a6e22e">html</span>)
+        <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">statusCode</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</span>
+        <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">setHeader</span>(<span style="color:#e6db74">&#39;Content-Type&#39;</span>, <span style="color:#e6db74">&#39;text/html; charset=utf-8&#39;</span>)
+        <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">write</span>(<span style="color:#a6e22e">string</span>)
+        <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">end</span>()
+    }
+</code></pre></div><p>如果只由前端来实现路由的效果的话，我们可以使用锚点的方法来代替。代码请点击下方链接</p>
+<p>&ndash;&gt; <a href="https://mysterywz.xyz/Assignments/anchor-router/">link</a></p>
+<p>这个我认为也是 vue 的原理，我故意的把锚点的链接都弄的和 vue 的一致。</p>
+<hr>
+<p>今天有点晚了，明天我看了<code>vue-router</code>再来写后半部分</p>
+<p>现在已经是第二天了，我今天去看牙医，回来弹了一个小时琴就快 11 点了，现在来写这篇博客。</p>
+<p>我发现用了 vue 之后上面的问题直接解决了，还要什么后端配合嘛？并且超级简单的代码，原来这就是传说中的单页面应用，以前我觉得神乎其神，现在就是也就这样嘛。
+我的 vue 版本代码也做完了，但是基本是 copy 的官方版本，毕竟是个简单的 demo 嘛，下一步把 vue 在看一遍，接着写完那个 vue 的第一个毕设。</p>
+<p>&ndash;&gt;<a href="https://mysterywz.xyz/Assignments/vue-router/">link</a></p>
+<p>(完)</p></article>
+        
+
+        
+        
+        <nav role="navigation" class="flex-container bottom-menu">
+            
+<hr />
+<p>
+
+
+    
+
+    
+        
+            <a href="/">首页</a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/articles">喜欢的文章</a>
+        
+            &#183; 
+            <a href="/posts/">想写的文章</a>
+        
+            &#183; 
+            <a href="/about">我是谁?</a>
+        
+    
+    
+    
+
+</p>
+        </nav>
+        
+        
+    </main>
+    
+    <footer class="flex-container footer">
+</footer>
+    
+    
+</body>
+
+</html>

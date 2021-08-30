@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<title>
+    重新理解promise - Mysteryven&rsquo;s Blog
+</title>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.6462c34240368b7550fdd995726445214c2f5fd7da600076fe14673d57f05250.css" integrity="sha256-ZGLDQkA2i3VQ/dmVcmRFIUwvX9faYAB2/hRnPVfwUlA=" crossorigin="anonymous" media="screen">
+
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="重新理解promise"/>
+<meta name="twitter:description" content=""/>
+
+<meta property="og:title" content="重新理解promise" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mysteryven.com/_posts/%E9%87%8D%E6%96%B0%E7%90%86%E8%A7%A3promise/" />
+<meta property="article:published_time" content="2020-02-19T16:36:56+08:00" />
+<meta property="article:modified_time" content="2020-02-19T16:36:56+08:00" />
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-171080709-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+
+    
+    
+    
+    <title>
+        
+        重新理解promise
+        
+    </title>
+</head>
+
+<body>
+    
+    
+    <header class="wrap flex-container">
+        <h1>重新理解promise</h1>
+    </header>
+    
+    <main class="wrap">
+        
+        <article role="article" class="flex-container"><pre><code>function display(res) {
+	console.log(res);
+}
+
+const dataFetch = fetch('/tweet/mystery/');
+dataFetch.then(display)
+</code></pre><p>当我们执行到 <code>dataFetch...</code> 这一行的时候，我们的 <code>dataFetch</code> 这个变量会立即拿到如下格式的一个数组：</p>
+<pre><code>{
+	value: undefined,
+	fullfillment: []
+}
+</code></pre><p>这里的 <code>value</code> 存储的就是我们将要从接口拿到的值，不过在此时是空而已。</p>
+<p>而<code>then</code> 后面的方法都会被放到 <code>fullfillment</code> 这个数组里面。当 <code>value</code> 里的值变化时，就会去触发数组里面的方法。如果 <code>then</code> 换个名字，换成 <code>auto-trigger-on-value-be-updated</code> 会更好理解一点。不过这个名字倒是太长了。</p>
+<p>这就是 promise 的实现机制。</p></article>
+        
+
+        
+        
+        <nav role="navigation" class="flex-container bottom-menu">
+            
+<hr />
+<p>
+
+
+    
+
+    
+        
+            <a href="/">首页</a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/articles">喜欢的文章</a>
+        
+            &#183; 
+            <a href="/posts/">想写的文章</a>
+        
+            &#183; 
+            <a href="/about">我是谁?</a>
+        
+    
+    
+    
+
+</p>
+        </nav>
+        
+        
+    </main>
+    
+    <footer class="flex-container footer">
+</footer>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>React on Mysteryven&#39;s Blog</title>
+    <link>https://mysteryven.com/tags/react/</link>
+    <description>Recent content in React on Mysteryven&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Feb 2020 15:46:42 +0800</lastBuildDate>
+    
+	<atom:link href="https://mysteryven.com/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>理解React中的虚拟DOM</title>
+      <link>https://mysteryven.com/_posts/posts/%E4%B8%BA%E4%BB%80%E4%B9%88react%E4%B8%AD%E7%9A%84%E8%99%9A%E6%8B%9Fdom%E5%8F%AF%E4%BB%A5%E6%8F%90%E9%AB%98%E6%80%A7%E8%83%BD/</link>
+      <pubDate>Sun, 02 Feb 2020 15:46:42 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E4%B8%BA%E4%BB%80%E4%B9%88react%E4%B8%AD%E7%9A%84%E8%99%9A%E6%8B%9Fdom%E5%8F%AF%E4%BB%A5%E6%8F%90%E9%AB%98%E6%80%A7%E8%83%BD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>理解React中的虚拟DOM</title>
+      <link>https://mysteryven.com/_posts/%E4%B8%BA%E4%BB%80%E4%B9%88react%E4%B8%AD%E7%9A%84%E8%99%9A%E6%8B%9Fdom%E5%8F%AF%E4%BB%A5%E6%8F%90%E9%AB%98%E6%80%A7%E8%83%BD/</link>
+      <pubDate>Sun, 02 Feb 2020 15:46:42 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E4%B8%BA%E4%BB%80%E4%B9%88react%E4%B8%AD%E7%9A%84%E8%99%9A%E6%8B%9Fdom%E5%8F%AF%E4%BB%A5%E6%8F%90%E9%AB%98%E6%80%A7%E8%83%BD/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

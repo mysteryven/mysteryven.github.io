@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<title>
+    YDKJ 2th - Get Started - Chapter 2 笔记 - Mysteryven&rsquo;s Blog
+</title>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.6462c34240368b7550fdd995726445214c2f5fd7da600076fe14673d57f05250.css" integrity="sha256-ZGLDQkA2i3VQ/dmVcmRFIUwvX9faYAB2/hRnPVfwUlA=" crossorigin="anonymous" media="screen">
+
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="YDKJ 2th - Get Started - Chapter 2 笔记"/>
+<meta name="twitter:description" content="本系列是《你不知道的 JS》第二版的读书笔记，本笔记属于 Get Started 一书的第二章，书籍传送门：click me"/>
+
+<meta property="og:title" content="YDKJ 2th - Get Started - Chapter 2 笔记" />
+<meta property="og:description" content="本系列是《你不知道的 JS》第二版的读书笔记，本笔记属于 Get Started 一书的第二章，书籍传送门：click me" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mysteryven.com/_posts/ydkj-get-started-2/" />
+<meta property="article:published_time" content="2020-03-16T21:39:56+08:00" />
+<meta property="article:modified_time" content="2020-03-16T21:39:56+08:00" />
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-171080709-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+
+    
+    
+    
+    <title>
+        
+        YDKJ 2th - Get Started - Chapter 2 笔记
+        
+    </title>
+</head>
+
+<body>
+    
+    
+    <header class="wrap flex-container">
+        <h1>YDKJ 2th - Get Started - Chapter 2 笔记</h1>
+    </header>
+    
+    <main class="wrap">
+        
+        <article role="article" class="flex-container"><p>本系列是《你不知道的 JS》第二版的读书笔记，本笔记属于 Get Started 一书的第二章，书籍传送门：<a href="https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/ch2.md">click me</a></p>
+<p>我们通常认为 <code>const</code> 的作用是在声明一个不可变的变量，但准确的说，<code>const</code> 声明的是一个不能被重新赋值（re-assigned）的变量，而不是不可变(unchangeable)。</p>
+<p>函数有如下两种声明方式：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">foo</span>(<span style="color:#a6e22e">coolThings</span>) { <span style="color:#75715e">// 第一种声明方式 - function declaration
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// ..
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Hi&#39;</span>;
+}
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">foo</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">coolThing</span>) {...} <span style="color:#75715e">// 第二种声明方式 - function expression
+</span></code></pre></div><p>这两种声明方式有一个很容易被忽略的区别：</p>
+<p>对于第一种来说，函数名（identifier）和函数值（function value）的绑定发生在代码编译阶段（compile phase of the code）。而第二种呢，函数名和函数值只在运行到当前语句的时候才会建立关系。</p>
+<p>JS 中有 <code>==</code> 和 <code>===</code> 两个判断相等的运算符。通常在咱们项目中，我们会使用更严格的 <code>===</code>。毕竟 <code>==</code> 一不小心就造成 bug 了。和 <code>==</code> 相比，我们通常认为 <code>===</code> 既比较值，也比较类型，所以更严格一点。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;1&#34;</span>; <span style="color:#75715e">// true
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">1</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;1&#34;</span>; <span style="color:#75715e">// false
+</span></code></pre></div><p>事实上，两者都会比较类型，真正的不同点在于：<code>===</code> 不允许任何类型转化（type conversion），而 <code>==</code> 允许，并且倾向于转化为 <code>number</code> 类型。</p>
+<p>如果相比较的两个值的类型是相同的，二者做的事情一模一样。</p>
+<p><code>===</code> 也有两个判断不准的值。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">NaN</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">NaN</span>; <span style="color:#75715e">// false
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">0</span> <span style="color:#f92672">===</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">0</span>; <span style="color:#75715e">// true
+</span></code></pre></div><p>对于第一个问题，我们使用 <code>Number.isNaN</code> 来判断，对于第二个，我们使用 <code>Object.is</code> 方法。</p>
+<p><code>&lt;</code> 、<code>&gt;</code> 、<code>if</code>、<code>while</code> 都会有发生像 <code>==</code> 的隐式类型转化，这点太坑了。</p>
+<p>比如下面这个例子，挺难发现问题吧。</p>
+<pre><code>var arr = [ &quot;1&quot;, &quot;10&quot;, &quot;100&quot;, &quot;1000&quot; ];
+for (let i = 0; i &lt; arr.length &amp;&amp; arr[i] &lt; 500; i++) {
+    // 会运行三次
+}
+</code></pre><p>虽说我们可以用 <code>===</code> 来避免相等判断时的隐式类型转化问题，但是上面提到的这些咋办？ 所以说，这个问题很难被逃避，与其畏惧他，还不如去面对它！去了解它的规则，去征服他！ 我记得这本书后面的部分有更详细的解释，到那时候我们再整理。</p>
+<p>就目前来说，我们组织 JS 代码有两种方式，一种是 <code>Class</code>，另一种是使用 <code>ES Module</code>。使用 <code>ES Module</code> 的方法如下：</p>
+<pre><code>// 文件 A.js
+export function printHello() {
+    console.log(&quot;hello&quot;)
+}
+
+// 文件 B.js
+import {printHello} from '/A.js';
+
+printHello();
+
+// 文件 C.js
+import {printHello} from '/A.js';
+
+printHello();
+</code></pre><p>这里有个要特别注意的地方，不管我们引用了 A 文件中的 <code>printHello</code> 几次，都只是引用的一个地址，他们都是同一个，我们 import 进来的都是同一个实例。也叫做 singletons。</p>
+<p>之前我在项目中就踩过坑，那时候不清楚这个规则，无意间修改了同事的接口名，导致出了线上问题，血淋淋的教训。</p>
+<p>如果想解决这个问题，我们就要借助下面这个组织方法：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">printDetails</span>(<span style="color:#a6e22e">pub</span>, <span style="color:#a6e22e">URL</span>) {
+  <span style="color:#a6e22e">pub</span>.<span style="color:#a6e22e">print</span>();
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">URL</span>);
+}
+
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">create</span>(<span style="color:#a6e22e">title</span>, <span style="color:#a6e22e">author</span>, <span style="color:#a6e22e">pubDate</span>, <span style="color:#a6e22e">URL</span>) {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">pub</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">createPub</span>(<span style="color:#a6e22e">title</span>, <span style="color:#a6e22e">author</span>, <span style="color:#a6e22e">pubDate</span>);
+
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">publicAPI</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">print</span>() {
+      <span style="color:#a6e22e">printDetails</span>(<span style="color:#a6e22e">pub</span>, <span style="color:#a6e22e">URL</span>);
+    }
+  };
+
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">publicAPI</span>;
+}
+</code></pre></div><p>以上就是这一节的全部笔记内容了。</p></article>
+        
+
+        
+        
+        <nav role="navigation" class="flex-container bottom-menu">
+            
+<hr />
+<p>
+
+
+    
+
+    
+        
+            <a href="/">首页</a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/articles">喜欢的文章</a>
+        
+            &#183; 
+            <a href="/posts/">想写的文章</a>
+        
+            &#183; 
+            <a href="/about">我是谁?</a>
+        
+    
+    
+    
+
+</p>
+        </nav>
+        
+        
+    </main>
+    
+    <footer class="flex-container footer">
+</footer>
+    
+    
+</body>
+
+</html>

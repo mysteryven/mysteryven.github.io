@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JS on Mysteryven&#39;s Blog</title>
+    <link>https://mysteryven.com/tags/js/</link>
+    <description>Recent content in JS on Mysteryven&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Jul 2020 10:42:54 +0800</lastBuildDate>
+    
+	<atom:link href="https://mysteryven.com/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JS中this的几种类型</title>
+      <link>https://mysteryven.com/_posts/js%E4%B8%ADthis%E7%9A%84%E5%87%A0%E7%A7%8D%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Sun, 05 Jul 2020 10:42:54 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/js%E4%B8%ADthis%E7%9A%84%E5%87%A0%E7%A7%8D%E7%B1%BB%E5%9E%8B/</guid>
+      <description>在 JS 中，this 是一个特别让人头疼的东西。起初，我还对能掌握 this 抱有激情，但随着时间的推移，老是有出人意料的场景出现，我开始想，这或许是一个比较糟糕的设计，而我们需要付出时间，为这个糟糕的设计埋单。
+尽管如此，JS 已经发展到如此体量了，我们不去战胜它，也没有办法。
+this 之所以困扰，就是因为它的规则太多了，很容易混淆。今天我们就按照优先级由低到高的顺序，来顺一遍 this 的规则。
+默认绑定（default Binding） 这是优先级最低的方式，不过，只能在非严格模式 (strict mode) 下使用。这种形式也是我们不推荐使用的。
+function foo() { console.log( this.a ); } var a = 2; foo(); // 2 隐式绑定（Implicit Binding） 我们调用对象的一个函数，如果没有更高的 this 规则，那隐式绑定就会生效了。
+我们还举例了 JQuery 的例子，这个是第三方库为我们添加的，这时候的 this 指向什么，要看他们的文档。
+function foo() { console.log( this.a ); } var obj = { a: 2, foo: foo }; obj.foo(); // 2  // 像 JQuery 这样的框架 $(&amp;#39;#a&amp;#39;).on(&amp;#39;click&amp;#39;, function doSomething() { console.</description>
+    </item>
+    
+    <item>
+      <title>JS中this的几种类型</title>
+      <link>https://mysteryven.com/_posts/posts/js%E4%B8%ADthis%E7%9A%84%E5%87%A0%E7%A7%8D%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Sun, 05 Jul 2020 10:42:54 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/js%E4%B8%ADthis%E7%9A%84%E5%87%A0%E7%A7%8D%E7%B1%BB%E5%9E%8B/</guid>
+      <description>在 JS 中，this 是一个特别让人头疼的东西。起初，我还对能掌握 this 抱有激情，但随着时间的推移，老是有出人意料的场景出现，我开始想，这或许是一个比较糟糕的设计，而我们需要付出时间，为这个糟糕的设计埋单。
+尽管如此，JS 已经发展到如此体量了，我们不去战胜它，也没有办法。
+this 之所以困扰，就是因为它的规则太多了，很容易混淆。今天我们就按照优先级由低到高的顺序，来顺一遍 this 的规则。
+默认绑定（default Binding） 这是优先级最低的方式，不过，只能在非严格模式 (strict mode) 下使用。这种形式也是我们不推荐使用的。
+function foo() { console.log( this.a ); } var a = 2; foo(); // 2 隐式绑定（Implicit Binding） 我们调用对象的一个函数，如果没有更高的 this 规则，那隐式绑定就会生效了。
+我们还举例了 JQuery 的例子，这个是第三方库为我们添加的，这时候的 this 指向什么，要看他们的文档。
+function foo() { console.log( this.a ); } var obj = { a: 2, foo: foo }; obj.foo(); // 2  // 像 JQuery 这样的框架 $(&amp;#39;#a&amp;#39;).on(&amp;#39;click&amp;#39;, function doSomething() { console.</description>
+    </item>
+    
+    <item>
+      <title>在 JS 中，如何判断一个变量是 string 类型</title>
+      <link>https://mysteryven.com/_posts/posts/typeof%E5%92%8Cinstanceof%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Mon, 02 Mar 2020 16:25:12 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/typeof%E5%92%8Cinstanceof%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>在 JS 中，如何判断一个变量是 string 类型</title>
+      <link>https://mysteryven.com/_posts/typeof%E5%92%8Cinstanceof%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Mon, 02 Mar 2020 16:25:12 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/typeof%E5%92%8Cinstanceof%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>如何用 generator 和 promise 实现一个 async/await </title>
+      <link>https://mysteryven.com/_posts/posts/%E5%A6%82%E4%BD%95%E7%94%A8generator%E5%92%8Cpromise%E5%AE%9E%E7%8E%B0await%E7%9A%84%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Fri, 28 Feb 2020 19:24:02 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E5%A6%82%E4%BD%95%E7%94%A8generator%E5%92%8Cpromise%E5%AE%9E%E7%8E%B0await%E7%9A%84%E8%AF%AD%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>如何用 generator 和 promise 实现一个 async/await </title>
+      <link>https://mysteryven.com/_posts/%E5%A6%82%E4%BD%95%E7%94%A8generator%E5%92%8Cpromise%E5%AE%9E%E7%8E%B0await%E7%9A%84%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Fri, 28 Feb 2020 19:24:02 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E5%A6%82%E4%BD%95%E7%94%A8generator%E5%92%8Cpromise%E5%AE%9E%E7%8E%B0await%E7%9A%84%E8%AF%AD%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

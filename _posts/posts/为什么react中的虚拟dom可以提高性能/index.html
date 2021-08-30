@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<title>
+    理解React中的虚拟DOM - Mysteryven&rsquo;s Blog
+</title>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.6462c34240368b7550fdd995726445214c2f5fd7da600076fe14673d57f05250.css" integrity="sha256-ZGLDQkA2i3VQ/dmVcmRFIUwvX9faYAB2/hRnPVfwUlA=" crossorigin="anonymous" media="screen">
+
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="理解React中的虚拟DOM"/>
+<meta name="twitter:description" content=""/>
+
+<meta property="og:title" content="理解React中的虚拟DOM" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mysteryven.com/_posts/posts/%E4%B8%BA%E4%BB%80%E4%B9%88react%E4%B8%AD%E7%9A%84%E8%99%9A%E6%8B%9Fdom%E5%8F%AF%E4%BB%A5%E6%8F%90%E9%AB%98%E6%80%A7%E8%83%BD/" />
+<meta property="article:published_time" content="2020-02-02T15:46:42+08:00" />
+<meta property="article:modified_time" content="2020-02-02T15:46:42+08:00" />
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-171080709-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+
+    
+    
+    
+    <title>
+        
+        理解React中的虚拟DOM
+        
+    </title>
+</head>
+
+<body>
+    
+    
+    <header class="wrap flex-container">
+        <h1>理解React中的虚拟DOM</h1>
+    </header>
+    
+    <main class="wrap">
+        
+        <article role="article" class="flex-container"><p>React 在组件中维护了一套映射真实 DOM 的虚拟 DOM 状态。当组件发生变化时，他不会直接操作真实 DOM，而会先和旧的虚拟 DOM 进行一个 Diff 操作，得到需要改变的 DOM 节点后，再去改变需要改变的节点。</p>
+<p>比较两个树直接的差异的算法的时间复杂度本来是 O(n^3) 级别的。如果 React 也采用这个方法的话，那无疑对性能来说是个很大的考验。</p>
+<p>鉴于 UI 中 DOM 节点的结构相对稳定，React 的 Diff 算法的时间复杂度降到了 O(n)。那它是咋做的呢？我们可以把 UI 组件的变化分为三种情况：</p>
+<ol>
+<li>
+<p>属性、顺序发生变化，这时候 React 只会改变 DOM 节点的属性或者给他们互换位置。</p>
+</li>
+<li>
+<p>节点类型发生变化，此时会直接重新渲染。</p>
+</li>
+<li>
+<p>节点跨层移动，也会重新渲染。</p>
+</li>
+</ol>
+<p>或许看起来很浪费性能，但实际上在特殊的 UI 场景下，它确实是很高效的。当然了它还有一个前提，就是我们要给类型相同的兄弟节点一个 key ,让它可以被唯一标识。</p></article>
+        
+
+        
+        
+        <nav role="navigation" class="flex-container bottom-menu">
+            
+<hr />
+<p>
+
+
+    
+
+    
+        
+            <a href="/">首页</a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/articles">喜欢的文章</a>
+        
+            &#183; 
+            <a href="/posts/">想写的文章</a>
+        
+            &#183; 
+            <a href="/about">我是谁?</a>
+        
+    
+    
+    
+
+</p>
+        </nav>
+        
+        
+    </main>
+    
+    <footer class="flex-container footer">
+</footer>
+    
+    
+</body>
+
+</html>

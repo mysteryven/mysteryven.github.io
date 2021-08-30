@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mysteryven&#39;s Blog</title>
+    <link>https://mysteryven.com/</link>
+    <description>Recent content on Mysteryven&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Aug 2021 09:39:53 +0800</lastBuildDate>
+    
+	<atom:link href="https://mysteryven.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>喜欢的文章</title>
+      <link>https://mysteryven.com/articles/</link>
+      <pubDate>Mon, 30 Aug 2021 09:39:53 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/articles/</guid>
+      <description>  Inside look at modern web browser
+   </description>
+    </item>
+    
+    <item>
+      <title>想写的文章</title>
+      <link>https://mysteryven.com/posts/</link>
+      <pubDate>Mon, 30 Aug 2021 09:39:53 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/posts/</guid>
+      <description>下面是我想在掘金写的主题：
+ React 中 Fiber 树的 Diff 算法 TS 为什么会引入 never 类型 React.setState 原理、同步/异步问题 WeakRef 的作用 TS 中设计模式（一个系列） Trie 树 TreeMap 树 浮点数为什么不准确 React 中 Fiber 树的构建过程
+&amp;hellip;  众所周知，人的本质是鸽子。所以这些主题可能会一直鸽，但是您要真的想了解，可以加我微信交流或催更：mysteryven</description>
+    </item>
+    
+    <item>
+      <title>认识js中的proxy</title>
+      <link>https://mysteryven.com/_posts/posts/%E8%AE%A4%E8%AF%86js%E4%B8%AD%E7%9A%84proxy/</link>
+      <pubDate>Tue, 21 Jul 2020 10:35:23 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E8%AE%A4%E8%AF%86js%E4%B8%AD%E7%9A%84proxy/</guid>
+      <description>测试</description>
+    </item>
+    
+    <item>
+      <title>什么是域名</title>
+      <link>https://mysteryven.com/_posts/posts/%E4%BB%80%E4%B9%88%E6%98%AF%E5%9F%9F%E5%90%8D/</link>
+      <pubDate>Sun, 12 Jul 2020 10:33:20 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E4%BB%80%E4%B9%88%E6%98%AF%E5%9F%9F%E5%90%8D/</guid>
+      <description>什么是域名 网域名称（英语：Domain Name，简称：Domain），简称域名、网域，是由一串用点分隔的字符组成的互联网上某一台计算机或计算机组的名称，用于在数据传输时标识计算机的电子方位。域名可以说是一个IP地址的代称，目的是为了便于记忆后者。
+IP地址是因特网主机的作为路由寻址用的数字体标识，不容易记忆，因而产生了域名这一种字符型标识，它比IP地址更容易记忆。这也是域名的一个重要功能——为数字化的互联网资源提供易于记忆的名称。
+另外，域名具有唯一性，在资源更改IP地址时，只需要进行新IP地址与恒定域名的转换，即可实现将资源移动到网络地址拓扑中的不同物理位置。基于以上两个特性，域名还用于创建个体的唯一标识。任何组织和个人在提供因特网资源时，都可以选择与其名称对应的域名，让其他人轻松访问这些资源。
+域名的分类 域名由多个部分组成，这些部分通常连接在一起，并由点分隔，例如zh.wikipedia.org。
+最右边的一个标签是顶级域名，例如zh.wikipedia.org的顶级域名是org。
+顶级域名下面是二级域名，它位于顶级域名的左侧。例如，在zh.wikipedia.org中，wikipedia是二级域名。
+二级域名下面是三级域名，它位于二级域名的左侧。例如，在zh.wikipedia.org中，zh是三级域名。
+以此类推。</description>
+    </item>
+    
+    <item>
+      <title>什么是域名</title>
+      <link>https://mysteryven.com/_posts/%E4%BB%80%E4%B9%88%E6%98%AF%E5%9F%9F%E5%90%8D/</link>
+      <pubDate>Sun, 12 Jul 2020 10:33:20 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E4%BB%80%E4%B9%88%E6%98%AF%E5%9F%9F%E5%90%8D/</guid>
+      <description>什么是域名 网域名称（英语：Domain Name，简称：Domain），简称域名、网域，是由一串用点分隔的字符组成的互联网上某一台计算机或计算机组的名称，用于在数据传输时标识计算机的电子方位。域名可以说是一个IP地址的代称，目的是为了便于记忆后者。
+IP地址是因特网主机的作为路由寻址用的数字体标识，不容易记忆，因而产生了域名这一种字符型标识，它比IP地址更容易记忆。这也是域名的一个重要功能——为数字化的互联网资源提供易于记忆的名称。
+另外，域名具有唯一性，在资源更改IP地址时，只需要进行新IP地址与恒定域名的转换，即可实现将资源移动到网络地址拓扑中的不同物理位置。基于以上两个特性，域名还用于创建个体的唯一标识。任何组织和个人在提供因特网资源时，都可以选择与其名称对应的域名，让其他人轻松访问这些资源。
+域名的分类 域名由多个部分组成，这些部分通常连接在一起，并由点分隔，例如zh.wikipedia.org。
+最右边的一个标签是顶级域名，例如zh.wikipedia.org的顶级域名是org。
+顶级域名下面是二级域名，它位于顶级域名的左侧。例如，在zh.wikipedia.org中，wikipedia是二级域名。
+二级域名下面是三级域名，它位于二级域名的左侧。例如，在zh.wikipedia.org中，zh是三级域名。
+以此类推。</description>
+    </item>
+    
+    <item>
+      <title>Html常用标签</title>
+      <link>https://mysteryven.com/_posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Sun, 12 Jul 2020 10:16:05 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>ps：点击标题可跳转到 MDN 链接
+a 标签 元素（或称锚元素）可以创建通向其他网页、文件、同一页面内的位置、电子邮件地址或任何其他 URL 的超链接。
+&amp;lt;a href=&amp;#34;https://example.com&amp;#34;&amp;gt;Website&amp;lt;/a&amp;gt; 锚点标签常常通过将 href 属性设置为 &amp;ldquo;#&amp;rdquo; 或 &amp;ldquo;javascript:void(0)&amp;rdquo; 来创造一个能阻止页面刷新的伪按钮的方式被滥用。
+img 标签 元素将一份图像嵌入文档
+&amp;lt;img src=&amp;#34;/avatar.png&amp;#34;&amp;gt; src 属性是必须的，它包含了你想嵌入的图片的文件路径。
+alt 属性包含一条对图像的文本描述，这不是强制性的，但对可访问性而言，它难以置信地有用——屏幕阅读器会将这些描述读给需要使用阅读器的使用者听，让他们知道图像的含义。如果由于某种原因无法加载图像，普通浏览器也会在页面上显示alt 属性中的备用文本：例如，网络错误、内容被屏蔽或链接过期时。
+table 标签 table 元素表示表格数据 — 即通过二维数据表表示的信息。
+&amp;lt;table&amp;gt; &amp;lt;thead&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th colspan=&amp;#34;2&amp;#34;&amp;gt;The table header&amp;lt;/th&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/thead&amp;gt; &amp;lt;tbody&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;The table body&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;with two columns&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/tbody&amp;gt; &amp;lt;/table&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Html常用标签</title>
+      <link>https://mysteryven.com/_posts/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Sun, 12 Jul 2020 10:16:05 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>ps：点击标题可跳转到 MDN 链接
+a 标签 元素（或称锚元素）可以创建通向其他网页、文件、同一页面内的位置、电子邮件地址或任何其他 URL 的超链接。
+&amp;lt;a href=&amp;#34;https://example.com&amp;#34;&amp;gt;Website&amp;lt;/a&amp;gt; 锚点标签常常通过将 href 属性设置为 &amp;ldquo;#&amp;rdquo; 或 &amp;ldquo;javascript:void(0)&amp;rdquo; 来创造一个能阻止页面刷新的伪按钮的方式被滥用。
+img 标签 元素将一份图像嵌入文档
+&amp;lt;img src=&amp;#34;/avatar.png&amp;#34;&amp;gt; src 属性是必须的，它包含了你想嵌入的图片的文件路径。
+alt 属性包含一条对图像的文本描述，这不是强制性的，但对可访问性而言，它难以置信地有用——屏幕阅读器会将这些描述读给需要使用阅读器的使用者听，让他们知道图像的含义。如果由于某种原因无法加载图像，普通浏览器也会在页面上显示alt 属性中的备用文本：例如，网络错误、内容被屏蔽或链接过期时。
+table 标签 table 元素表示表格数据 — 即通过二维数据表表示的信息。
+&amp;lt;table&amp;gt; &amp;lt;thead&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th colspan=&amp;#34;2&amp;#34;&amp;gt;The table header&amp;lt;/th&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/thead&amp;gt; &amp;lt;tbody&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;The table body&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;with two columns&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/tbody&amp;gt; &amp;lt;/table&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>JS中this的几种类型</title>
+      <link>https://mysteryven.com/_posts/js%E4%B8%ADthis%E7%9A%84%E5%87%A0%E7%A7%8D%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Sun, 05 Jul 2020 10:42:54 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/js%E4%B8%ADthis%E7%9A%84%E5%87%A0%E7%A7%8D%E7%B1%BB%E5%9E%8B/</guid>
+      <description>在 JS 中，this 是一个特别让人头疼的东西。起初，我还对能掌握 this 抱有激情，但随着时间的推移，老是有出人意料的场景出现，我开始想，这或许是一个比较糟糕的设计，而我们需要付出时间，为这个糟糕的设计埋单。
+尽管如此，JS 已经发展到如此体量了，我们不去战胜它，也没有办法。
+this 之所以困扰，就是因为它的规则太多了，很容易混淆。今天我们就按照优先级由低到高的顺序，来顺一遍 this 的规则。
+默认绑定（default Binding） 这是优先级最低的方式，不过，只能在非严格模式 (strict mode) 下使用。这种形式也是我们不推荐使用的。
+function foo() { console.log( this.a ); } var a = 2; foo(); // 2 隐式绑定（Implicit Binding） 我们调用对象的一个函数，如果没有更高的 this 规则，那隐式绑定就会生效了。
+我们还举例了 JQuery 的例子，这个是第三方库为我们添加的，这时候的 this 指向什么，要看他们的文档。
+function foo() { console.log( this.a ); } var obj = { a: 2, foo: foo }; obj.foo(); // 2  // 像 JQuery 这样的框架 $(&amp;#39;#a&amp;#39;).on(&amp;#39;click&amp;#39;, function doSomething() { console.</description>
+    </item>
+    
+    <item>
+      <title>JS中this的几种类型</title>
+      <link>https://mysteryven.com/_posts/posts/js%E4%B8%ADthis%E7%9A%84%E5%87%A0%E7%A7%8D%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Sun, 05 Jul 2020 10:42:54 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/js%E4%B8%ADthis%E7%9A%84%E5%87%A0%E7%A7%8D%E7%B1%BB%E5%9E%8B/</guid>
+      <description>在 JS 中，this 是一个特别让人头疼的东西。起初，我还对能掌握 this 抱有激情，但随着时间的推移，老是有出人意料的场景出现，我开始想，这或许是一个比较糟糕的设计，而我们需要付出时间，为这个糟糕的设计埋单。
+尽管如此，JS 已经发展到如此体量了，我们不去战胜它，也没有办法。
+this 之所以困扰，就是因为它的规则太多了，很容易混淆。今天我们就按照优先级由低到高的顺序，来顺一遍 this 的规则。
+默认绑定（default Binding） 这是优先级最低的方式，不过，只能在非严格模式 (strict mode) 下使用。这种形式也是我们不推荐使用的。
+function foo() { console.log( this.a ); } var a = 2; foo(); // 2 隐式绑定（Implicit Binding） 我们调用对象的一个函数，如果没有更高的 this 规则，那隐式绑定就会生效了。
+我们还举例了 JQuery 的例子，这个是第三方库为我们添加的，这时候的 this 指向什么，要看他们的文档。
+function foo() { console.log( this.a ); } var obj = { a: 2, foo: foo }; obj.foo(); // 2  // 像 JQuery 这样的框架 $(&amp;#39;#a&amp;#39;).on(&amp;#39;click&amp;#39;, function doSomething() { console.</description>
+    </item>
+    
+    <item>
+      <title>YDKJ 2th - Get Started - Chapter 3 笔记</title>
+      <link>https://mysteryven.com/_posts/posts/ydkj-get-started-3/</link>
+      <pubDate>Fri, 20 Mar 2020 16:25:25 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/ydkj-get-started-3/</guid>
+      <description>&lt;p&gt;本系列是《你不知道的 JS》第二版的读书笔记，本笔记属于 Get Started 一书的第二章，书籍传送门：&lt;a href=&#34;https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/ch2.md&#34;&gt;click me&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>YDKJ 2th - Get Started - Chapter 3 笔记</title>
+      <link>https://mysteryven.com/_posts/ydkj-get-started-3/</link>
+      <pubDate>Fri, 20 Mar 2020 16:25:25 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/ydkj-get-started-3/</guid>
+      <description>&lt;p&gt;本系列是《你不知道的 JS》第二版的读书笔记，本笔记属于 Get Started 一书的第二章，书籍传送门：&lt;a href=&#34;https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/ch2.md&#34;&gt;click me&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>YDKJ 2th - Get Started - Chapter 2 笔记</title>
+      <link>https://mysteryven.com/_posts/posts/ydkj-get-started-2/</link>
+      <pubDate>Mon, 16 Mar 2020 21:39:56 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/ydkj-get-started-2/</guid>
+      <description>&lt;p&gt;本系列是《你不知道的 JS》第二版的读书笔记，本笔记属于 Get Started 一书的第二章，书籍传送门：&lt;a href=&#34;https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/ch2.md&#34;&gt;click me&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>YDKJ 2th - Get Started - Chapter 2 笔记</title>
+      <link>https://mysteryven.com/_posts/ydkj-get-started-2/</link>
+      <pubDate>Mon, 16 Mar 2020 21:39:56 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/ydkj-get-started-2/</guid>
+      <description>&lt;p&gt;本系列是《你不知道的 JS》第二版的读书笔记，本笔记属于 Get Started 一书的第二章，书籍传送门：&lt;a href=&#34;https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/ch2.md&#34;&gt;click me&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>为什么java需要多线程</title>
+      <link>https://mysteryven.com/_posts/posts/%E4%B8%BA%E4%BB%80%E4%B9%88java%E9%9C%80%E8%A6%81%E5%A4%9A%E7%BA%BF%E7%A8%8B/</link>
+      <pubDate>Sun, 08 Mar 2020 16:49:00 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E4%B8%BA%E4%BB%80%E4%B9%88java%E9%9C%80%E8%A6%81%E5%A4%9A%E7%BA%BF%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>为什么java需要多线程</title>
+      <link>https://mysteryven.com/_posts/%E4%B8%BA%E4%BB%80%E4%B9%88java%E9%9C%80%E8%A6%81%E5%A4%9A%E7%BA%BF%E7%A8%8B/</link>
+      <pubDate>Sun, 08 Mar 2020 16:49:00 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E4%B8%BA%E4%BB%80%E4%B9%88java%E9%9C%80%E8%A6%81%E5%A4%9A%E7%BA%BF%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>如何构建一个好的前端架构</title>
+      <link>https://mysteryven.com/_posts/posts/%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84/</link>
+      <pubDate>Mon, 02 Mar 2020 22:11:53 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>如何构建一个好的前端架构</title>
+      <link>https://mysteryven.com/_posts/%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84/</link>
+      <pubDate>Mon, 02 Mar 2020 22:11:53 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>在 JS 中，如何判断一个变量是 string 类型</title>
+      <link>https://mysteryven.com/_posts/posts/typeof%E5%92%8Cinstanceof%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Mon, 02 Mar 2020 16:25:12 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/typeof%E5%92%8Cinstanceof%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>在 JS 中，如何判断一个变量是 string 类型</title>
+      <link>https://mysteryven.com/_posts/typeof%E5%92%8Cinstanceof%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Mon, 02 Mar 2020 16:25:12 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/typeof%E5%92%8Cinstanceof%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>如何用 generator 和 promise 实现一个 async/await </title>
+      <link>https://mysteryven.com/_posts/posts/%E5%A6%82%E4%BD%95%E7%94%A8generator%E5%92%8Cpromise%E5%AE%9E%E7%8E%B0await%E7%9A%84%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Fri, 28 Feb 2020 19:24:02 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E5%A6%82%E4%BD%95%E7%94%A8generator%E5%92%8Cpromise%E5%AE%9E%E7%8E%B0await%E7%9A%84%E8%AF%AD%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>如何用 generator 和 promise 实现一个 async/await </title>
+      <link>https://mysteryven.com/_posts/%E5%A6%82%E4%BD%95%E7%94%A8generator%E5%92%8Cpromise%E5%AE%9E%E7%8E%B0await%E7%9A%84%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Fri, 28 Feb 2020 19:24:02 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E5%A6%82%E4%BD%95%E7%94%A8generator%E5%92%8Cpromise%E5%AE%9E%E7%8E%B0await%E7%9A%84%E8%AF%AD%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>重新理解promise</title>
+      <link>https://mysteryven.com/_posts/posts/%E9%87%8D%E6%96%B0%E7%90%86%E8%A7%A3promise/</link>
+      <pubDate>Wed, 19 Feb 2020 16:36:56 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E9%87%8D%E6%96%B0%E7%90%86%E8%A7%A3promise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>重新理解promise</title>
+      <link>https://mysteryven.com/_posts/%E9%87%8D%E6%96%B0%E7%90%86%E8%A7%A3promise/</link>
+      <pubDate>Wed, 19 Feb 2020 16:36:56 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E9%87%8D%E6%96%B0%E7%90%86%E8%A7%A3promise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java 的 Collection 体系总结</title>
+      <link>https://mysteryven.com/_posts/java%E7%9A%84collection%E4%BD%93%E7%B3%BB%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Tue, 04 Feb 2020 13:59:17 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/java%E7%9A%84collection%E4%BD%93%E7%B3%BB%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;p&gt;Collection 是一个接口，由它衍生出的类在 Java 中用途非常广。下图就是关于 Collection 的继承体系。（图片可能加载很慢）&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java 的 Collection 体系总结</title>
+      <link>https://mysteryven.com/_posts/posts/java%E7%9A%84collection%E4%BD%93%E7%B3%BB%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Tue, 04 Feb 2020 13:59:17 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/java%E7%9A%84collection%E4%BD%93%E7%B3%BB%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;p&gt;Collection 是一个接口，由它衍生出的类在 Java 中用途非常广。下图就是关于 Collection 的继承体系。（图片可能加载很慢）&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>解决 Maven 冲突的经验总结</title>
+      <link>https://mysteryven.com/_posts/posts/%E8%A7%A3%E5%86%B3maven%E5%86%B2%E7%AA%81%E7%9A%84%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 03 Feb 2020 12:47:48 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E8%A7%A3%E5%86%B3maven%E5%86%B2%E7%AA%81%E7%9A%84%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;p&gt;包管理工作的本质就是告诉 JVM 它需要的第三方的类库在哪，并且当遇到包冲突的时候，来解决它。Maven 就是其中的一个包管理工具。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>解决 Maven 冲突的经验总结</title>
+      <link>https://mysteryven.com/_posts/%E8%A7%A3%E5%86%B3maven%E5%86%B2%E7%AA%81%E7%9A%84%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 03 Feb 2020 12:47:48 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E8%A7%A3%E5%86%B3maven%E5%86%B2%E7%AA%81%E7%9A%84%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;p&gt;包管理工作的本质就是告诉 JVM 它需要的第三方的类库在哪，并且当遇到包冲突的时候，来解决它。Maven 就是其中的一个包管理工具。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>理解React中的虚拟DOM</title>
+      <link>https://mysteryven.com/_posts/posts/%E4%B8%BA%E4%BB%80%E4%B9%88react%E4%B8%AD%E7%9A%84%E8%99%9A%E6%8B%9Fdom%E5%8F%AF%E4%BB%A5%E6%8F%90%E9%AB%98%E6%80%A7%E8%83%BD/</link>
+      <pubDate>Sun, 02 Feb 2020 15:46:42 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E4%B8%BA%E4%BB%80%E4%B9%88react%E4%B8%AD%E7%9A%84%E8%99%9A%E6%8B%9Fdom%E5%8F%AF%E4%BB%A5%E6%8F%90%E9%AB%98%E6%80%A7%E8%83%BD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>理解React中的虚拟DOM</title>
+      <link>https://mysteryven.com/_posts/%E4%B8%BA%E4%BB%80%E4%B9%88react%E4%B8%AD%E7%9A%84%E8%99%9A%E6%8B%9Fdom%E5%8F%AF%E4%BB%A5%E6%8F%90%E9%AB%98%E6%80%A7%E8%83%BD/</link>
+      <pubDate>Sun, 02 Feb 2020 15:46:42 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E4%B8%BA%E4%BB%80%E4%B9%88react%E4%B8%AD%E7%9A%84%E8%99%9A%E6%8B%9Fdom%E5%8F%AF%E4%BB%A5%E6%8F%90%E9%AB%98%E6%80%A7%E8%83%BD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>关于我</title>
+      <link>https://mysteryven.com/about/</link>
+      <pubDate>Sat, 01 Feb 2020 09:39:53 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/about/</guid>
+      <description>我叫 mysteryven。此名字的由来结合了三个方面：
+ 我喜欢的一位电竞选手 mystic 我喜欢的英雄「薇恩」 我真名中的一个字  觉得拗口的话，也可以叫我二牙。
+我会活跃在：
+  掘金 更新技术文章
+  Bilibili 更新健身 vlog 或者视频教程
+  Github 更新个人项目
+  </description>
+    </item>
+    
+    <item>
+      <title>如何使用 Hugo 自建博客</title>
+      <link>https://mysteryven.com/_posts/my-first-post/</link>
+      <pubDate>Fri, 31 Jan 2020 19:19:17 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/my-first-post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>如何使用 Hugo 自建博客</title>
+      <link>https://mysteryven.com/_posts/posts/my-first-post/</link>
+      <pubDate>Fri, 31 Jan 2020 19:19:17 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/my-first-post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JS继承的几种写法</title>
+      <link>https://mysteryven.com/_posts/js%E7%BB%A7%E6%89%BF%E7%9A%84%E5%87%A0%E7%A7%8D%E5%86%99%E6%B3%95/</link>
+      <pubDate>Mon, 18 Mar 2019 13:44:24 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/js%E7%BB%A7%E6%89%BF%E7%9A%84%E5%87%A0%E7%A7%8D%E5%86%99%E6%B3%95/</guid>
+      <description>&lt;p&gt;前几天去面试的时候被问到了这个问题，今天来重新整理一下，并比较一下二者的区别。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JS继承的几种写法</title>
+      <link>https://mysteryven.com/_posts/posts/js%E7%BB%A7%E6%89%BF%E7%9A%84%E5%87%A0%E7%A7%8D%E5%86%99%E6%B3%95/</link>
+      <pubDate>Mon, 18 Mar 2019 13:44:24 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/js%E7%BB%A7%E6%89%BF%E7%9A%84%E5%87%A0%E7%A7%8D%E5%86%99%E6%B3%95/</guid>
+      <description>&lt;p&gt;前几天去面试的时候被问到了这个问题，今天来重新整理一下，并比较一下二者的区别。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>手写bind</title>
+      <link>https://mysteryven.com/_posts/posts/%E6%89%8B%E5%86%99bind/</link>
+      <pubDate>Wed, 06 Mar 2019 09:42:15 +0000</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E6%89%8B%E5%86%99bind/</guid>
+      <description>&lt;p&gt;bind 是在 ES5 新加入的语法，具体的语法 MDN 都有。但有一点需要额外注意一下：bind 会返回一个新的函数。也就是说：它会修改 this 的指向，并返回新的函数体。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>手写bind</title>
+      <link>https://mysteryven.com/_posts/%E6%89%8B%E5%86%99bind/</link>
+      <pubDate>Wed, 06 Mar 2019 09:42:15 +0000</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E6%89%8B%E5%86%99bind/</guid>
+      <description>&lt;p&gt;bind 是在 ES5 新加入的语法，具体的语法 MDN 都有。但有一点需要额外注意一下：bind 会返回一个新的函数。也就是说：它会修改 this 的指向，并返回新的函数体。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JS里new的用途</title>
+      <link>https://mysteryven.com/_posts/js%E9%87%8Cnew%E7%9A%84%E7%94%A8%E9%80%94/</link>
+      <pubDate>Fri, 01 Mar 2019 13:49:24 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/js%E9%87%8Cnew%E7%9A%84%E7%94%A8%E9%80%94/</guid>
+      <description>&lt;p&gt;今天看到了一片博文讲 &lt;code&gt;new&lt;/code&gt; 讲的非常不错，于是我再简略的概括一下亦当复习了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>JS里new的用途</title>
+      <link>https://mysteryven.com/_posts/posts/js%E9%87%8Cnew%E7%9A%84%E7%94%A8%E9%80%94/</link>
+      <pubDate>Fri, 01 Mar 2019 13:49:24 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/js%E9%87%8Cnew%E7%9A%84%E7%94%A8%E9%80%94/</guid>
+      <description>&lt;p&gt;今天看到了一片博文讲 &lt;code&gt;new&lt;/code&gt; 讲的非常不错，于是我再简略的概括一下亦当复习了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>单元测试的必要性</title>
+      <link>https://mysteryven.com/_posts/posts/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%9A%84%E5%BF%85%E8%A6%81%E6%80%A7/</link>
+      <pubDate>Sat, 16 Feb 2019 19:06:41 +0000</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%9A%84%E5%BF%85%E8%A6%81%E6%80%A7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>单元测试的必要性</title>
+      <link>https://mysteryven.com/_posts/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%9A%84%E5%BF%85%E8%A6%81%E6%80%A7/</link>
+      <pubDate>Sat, 16 Feb 2019 19:06:41 +0000</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%9A%84%E5%BF%85%E8%A6%81%E6%80%A7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>自建一个文件上传的小demo（前后台）</title>
+      <link>https://mysteryven.com/_posts/posts/%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E5%8A%9F%E8%83%BD%E5%89%8D%E5%90%8E%E5%8F%B0/</link>
+      <pubDate>Sun, 10 Feb 2019 21:35:56 +0000</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E5%8A%9F%E8%83%BD%E5%89%8D%E5%90%8E%E5%8F%B0/</guid>
+      <description>&lt;p&gt;最近计划做一个图片上传的组件，在前期准备工作中就遇到了一些困难，比如：如何用 ajax 发送 form 表单的数据，如何把发送过去的数据存到服务器，现在，我已经解决了这些问题，基本实现了图片上传的原理，下面就是对应的代码。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>自建一个文件上传的小demo（前后台）</title>
+      <link>https://mysteryven.com/_posts/%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E5%8A%9F%E8%83%BD%E5%89%8D%E5%90%8E%E5%8F%B0/</link>
+      <pubDate>Sun, 10 Feb 2019 21:35:56 +0000</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E5%8A%9F%E8%83%BD%E5%89%8D%E5%90%8E%E5%8F%B0/</guid>
+      <description>&lt;p&gt;最近计划做一个图片上传的组件，在前期准备工作中就遇到了一些困难，比如：如何用 ajax 发送 form 表单的数据，如何把发送过去的数据存到服务器，现在，我已经解决了这些问题，基本实现了图片上传的原理，下面就是对应的代码。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>简谈web性能优化</title>
+      <link>https://mysteryven.com/_posts/posts/%E7%AE%80%E8%B0%88web%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Thu, 07 Feb 2019 13:26:50 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E7%AE%80%E8%B0%88web%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</guid>
+      <description>&lt;p&gt;前几天去面试，面试官全程围绕 web 性能优化的主题展开，问的我是一头雾水。由于没回答上几道题，结果自然也可想而知。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>简谈web性能优化</title>
+      <link>https://mysteryven.com/_posts/%E7%AE%80%E8%B0%88web%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Thu, 07 Feb 2019 13:26:50 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E7%AE%80%E8%B0%88web%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</guid>
+      <description>&lt;p&gt;前几天去面试，面试官全程围绕 web 性能优化的主题展开，问的我是一头雾水。由于没回答上几道题，结果自然也可想而知。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>你所不知道的计算机技巧</title>
+      <link>https://mysteryven.com/_posts/posts/%E4%BD%A0%E6%89%80%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Thu, 15 Nov 2018 22:15:40 +0000</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E4%BD%A0%E6%89%80%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E5%B7%A7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>你所不知道的计算机技巧</title>
+      <link>https://mysteryven.com/_posts/%E4%BD%A0%E6%89%80%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Thu, 15 Nov 2018 22:15:40 +0000</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E4%BD%A0%E6%89%80%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E5%B7%A7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>你应该懂得git知识点</title>
+      <link>https://mysteryven.com/_posts/posts/%E4%BD%A0%E5%BA%94%E8%AF%A5%E6%87%82%E5%BE%97git%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
+      <pubDate>Thu, 15 Nov 2018 13:53:00 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E4%BD%A0%E5%BA%94%E8%AF%A5%E6%87%82%E5%BE%97git%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
+      <description>&lt;p&gt;在公司用到的 VSC 是 SVN, 并且用到的也只是简单的几个命令，昨天我学习了一下 Github 的一些操作， 觉得很有必要学习一个 git 了，这对我理解 Github 的用法也很有帮助，也对我以后有好处。于是我今天从 Coursera 上注册了一个课程，准备跟随他学习一下 Git，笔记将记录在这里.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>你应该懂得git知识点</title>
+      <link>https://mysteryven.com/_posts/%E4%BD%A0%E5%BA%94%E8%AF%A5%E6%87%82%E5%BE%97git%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
+      <pubDate>Thu, 15 Nov 2018 13:53:00 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E4%BD%A0%E5%BA%94%E8%AF%A5%E6%87%82%E5%BE%97git%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
+      <description>&lt;p&gt;在公司用到的 VSC 是 SVN, 并且用到的也只是简单的几个命令，昨天我学习了一下 Github 的一些操作， 觉得很有必要学习一个 git 了，这对我理解 Github 的用法也很有帮助，也对我以后有好处。于是我今天从 Coursera 上注册了一个课程，准备跟随他学习一下 Git，笔记将记录在这里.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>css笔记之宽度与高度</title>
+      <link>https://mysteryven.com/_posts/posts/%E5%AE%BD%E5%BA%A6%E5%92%8C%E9%AB%98%E5%BA%A6/</link>
+      <pubDate>Sat, 10 Nov 2018 16:37:58 +0000</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E5%AE%BD%E5%BA%A6%E5%92%8C%E9%AB%98%E5%BA%A6/</guid>
+      <description>&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
+&lt;p&gt;如何在写 css 的时候不要固定死 width、height。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>css笔记之宽度与高度</title>
+      <link>https://mysteryven.com/_posts/%E5%AE%BD%E5%BA%A6%E5%92%8C%E9%AB%98%E5%BA%A6/</link>
+      <pubDate>Sat, 10 Nov 2018 16:37:58 +0000</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E5%AE%BD%E5%BA%A6%E5%92%8C%E9%AB%98%E5%BA%A6/</guid>
+      <description>&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
+&lt;p&gt;如何在写 css 的时候不要固定死 width、height。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>什么是路由</title>
+      <link>https://mysteryven.com/_posts/posts/%E4%BB%80%E4%B9%88%E6%98%AF%E8%B7%AF%E7%94%B1/</link>
+      <pubDate>Mon, 24 Sep 2018 13:52:14 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E4%BB%80%E4%B9%88%E6%98%AF%E8%B7%AF%E7%94%B1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>什么是路由</title>
+      <link>https://mysteryven.com/_posts/%E4%BB%80%E4%B9%88%E6%98%AF%E8%B7%AF%E7%94%B1/</link>
+      <pubDate>Mon, 24 Sep 2018 13:52:14 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E4%BB%80%E4%B9%88%E6%98%AF%E8%B7%AF%E7%94%B1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>关于form表单的一些事情</title>
+      <link>https://mysteryven.com/_posts/posts/%E7%90%86%E8%A7%A3form%E8%A1%A8%E5%8D%95/</link>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E7%90%86%E8%A7%A3form%E8%A1%A8%E5%8D%95/</guid>
+      <description>&lt;p&gt;我一直不敢用 form 表单，总觉得对它有种不熟悉的感觉，但是当我写登录注册页面的时候，觉得用 form 表单才是正道，因为我用 div 写连回车
+触发登录的功能都没有，所以我就专门学习了一下 form，现在对它也不在畏惧了，以下是我整理的几条：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于form表单的一些事情</title>
+      <link>https://mysteryven.com/_posts/%E7%90%86%E8%A7%A3form%E8%A1%A8%E5%8D%95/</link>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E7%90%86%E8%A7%A3form%E8%A1%A8%E5%8D%95/</guid>
+      <description>&lt;p&gt;我一直不敢用 form 表单，总觉得对它有种不熟悉的感觉，但是当我写登录注册页面的时候，觉得用 form 表单才是正道，因为我用 div 写连回车
+触发登录的功能都没有，所以我就专门学习了一下 form，现在对它也不在畏惧了，以下是我整理的几条：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>跟我做一个JQuery</title>
+      <link>https://mysteryven.com/_posts/posts/%E8%B7%9F%E6%88%91%E5%81%9A%E4%B8%80%E4%B8%AAjquery/</link>
+      <pubDate>Sun, 22 Apr 2018 13:31:25 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E8%B7%9F%E6%88%91%E5%81%9A%E4%B8%80%E4%B8%AAjquery/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本篇博文来简单的介绍一下 jQuery 的实现思路&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>跟我做一个JQuery</title>
+      <link>https://mysteryven.com/_posts/%E8%B7%9F%E6%88%91%E5%81%9A%E4%B8%80%E4%B8%AAjquery/</link>
+      <pubDate>Sun, 22 Apr 2018 13:31:25 +0800</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E8%B7%9F%E6%88%91%E5%81%9A%E4%B8%80%E4%B8%AAjquery/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本篇博文来简单的介绍一下 jQuery 的实现思路&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>7 种常用的排序算法</title>
+      <link>https://mysteryven.com/_posts/posts/%E5%B8%B8%E7%94%A8%E7%9A%84%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Wed, 14 Mar 2018 23:21:06 +0000</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/%E5%B8%B8%E7%94%A8%E7%9A%84%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;排序可视化请看&lt;a href=&#34;https://visualgo.net/bn/sorting&#34;&gt;网站&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;自己总结了一下几个常用的排序算法，用 JS 实现的，有错误欢迎指出。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>7 种常用的排序算法</title>
+      <link>https://mysteryven.com/_posts/%E5%B8%B8%E7%94%A8%E7%9A%84%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Wed, 14 Mar 2018 23:21:06 +0000</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/%E5%B8%B8%E7%94%A8%E7%9A%84%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;排序可视化请看&lt;a href=&#34;https://visualgo.net/bn/sorting&#34;&gt;网站&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;自己总结了一下几个常用的排序算法，用 JS 实现的，有错误欢迎指出。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>http-summary</title>
+      <link>https://mysteryven.com/_posts/http%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 12 Mar 2018 12:18:48 +0000</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/http%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;h1 id=&#34;前端需要掌握的-http-知识&#34;&gt;前端需要掌握的 Http 知识&lt;/h1&gt;
+&lt;h2 id=&#34;目录&#34;&gt;目录&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;请求格式&lt;/li&gt;
+&lt;li&gt;响应格式&lt;/li&gt;
+&lt;li&gt;工具&lt;/li&gt;
+&lt;li&gt;状态码&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>http-summary</title>
+      <link>https://mysteryven.com/_posts/posts/http%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 12 Mar 2018 12:18:48 +0000</pubDate>
+      
+      <guid>https://mysteryven.com/_posts/posts/http%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;h1 id=&#34;前端需要掌握的-http-知识&#34;&gt;前端需要掌握的 Http 知识&lt;/h1&gt;
+&lt;h2 id=&#34;目录&#34;&gt;目录&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;请求格式&lt;/li&gt;
+&lt;li&gt;响应格式&lt;/li&gt;
+&lt;li&gt;工具&lt;/li&gt;
+&lt;li&gt;状态码&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

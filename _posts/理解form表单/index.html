@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<title>
+    关于form表单的一些事情 - Mysteryven&rsquo;s Blog
+</title>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.6462c34240368b7550fdd995726445214c2f5fd7da600076fe14673d57f05250.css" integrity="sha256-ZGLDQkA2i3VQ/dmVcmRFIUwvX9faYAB2/hRnPVfwUlA=" crossorigin="anonymous" media="screen">
+
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="关于form表单的一些事情"/>
+<meta name="twitter:description" content="我一直不敢用 form 表单，总觉得对它有种不熟悉的感觉，但是当我写登录注册页面的时候，觉得用 form 表单才是正道，因为我用 div 写连回车
+触发登录的功能都没有，所以我就专门学习了一下 form，现在对它也不在畏惧了，以下是我整理的几条："/>
+
+<meta property="og:title" content="关于form表单的一些事情" />
+<meta property="og:description" content="我一直不敢用 form 表单，总觉得对它有种不熟悉的感觉，但是当我写登录注册页面的时候，觉得用 form 表单才是正道，因为我用 div 写连回车
+触发登录的功能都没有，所以我就专门学习了一下 form，现在对它也不在畏惧了，以下是我整理的几条：" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mysteryven.com/_posts/%E7%90%86%E8%A7%A3form%E8%A1%A8%E5%8D%95/" />
+<meta property="article:published_time" content="2018-08-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-08-23T00:00:00+00:00" />
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-171080709-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+
+    
+    
+    
+    <title>
+        
+        关于form表单的一些事情
+        
+    </title>
+</head>
+
+<body>
+    
+    
+    <header class="wrap flex-container">
+        <h1>关于form表单的一些事情</h1>
+    </header>
+    
+    <main class="wrap">
+        
+        <article role="article" class="flex-container"><p>我一直不敢用 form 表单，总觉得对它有种不熟悉的感觉，但是当我写登录注册页面的时候，觉得用 form 表单才是正道，因为我用 div 写连回车
+触发登录的功能都没有，所以我就专门学习了一下 form，现在对它也不在畏惧了，以下是我整理的几条：</p>
+<h2 id="监听-form-表单的事件">监听 form 表单的事件</h2>
+<p>正确的做法是设置 button 的 type 为 submit，并监听 form 表单的 submit 事件，这样我们回车也能触发 submit 事件。<br>
+如果 button 的 type 是其他的那么就不会触发 submit 了，但是不填 type 默认也是 submit</p>
+<pre><code> &lt;form @submit=&quot;test&quot;&gt;
+    &lt;h3&gt;注册&lt;/h3&gt;
+    &lt;svg class=&quot;icon close&quot; aria-hidden=&quot;true&quot; @click=&quot;registerVisible = false&quot;&gt;
+        &lt;use xlink:href=&quot;#icon-close&quot;&gt;&lt;/use
+    &lt;/svg&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;label for=&quot;&quot;&gt;邮箱&lt;/label&gt;
+        &lt;input type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;label for=&quot;&quot;&gt;密码&lt;/label&gt;
+        &lt;input type=&quot;text&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;actions&quot;&gt;
+        &lt;button type='submit'&gt;注册&lt;/button&gt;
+        &lt;button&gt;注册&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+</code></pre><h2 id="要设置阻止默认事件">要设置阻止默认事件</h2>
+<p>要在 test 函数里面写 preventDefault，不然的话会执行 form 的默认事件，这样就刷新页面了。以前人们会利用 form 可以发请求的功能来实现类似 jsonp 的功能，现在一般都用 script 来做。</p>
+<pre><code>test(e) {
+    e.preventDefault()
+    console.log('run test')
+}
+</code></pre><p>vue 文档推荐把事件修饰符写在 html，这样就能保持 js 不操作 Dom</p>
+<h2 id="阻止冒泡事件">阻止冒泡事件</h2>
+<p>我  以前会把阻止默认事件和这个弄混，这个是不让事件继续传播了，和那个根本不是一个东西
+<code>e.stopPagination</code></p>
+<p>(完)</p></article>
+        
+
+        
+        
+        <nav role="navigation" class="flex-container bottom-menu">
+            
+<hr />
+<p>
+
+
+    
+
+    
+        
+            <a href="/">首页</a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/articles">喜欢的文章</a>
+        
+            &#183; 
+            <a href="/posts/">想写的文章</a>
+        
+            &#183; 
+            <a href="/about">我是谁?</a>
+        
+    
+    
+    
+
+</p>
+        </nav>
+        
+        
+    </main>
+    
+    <footer class="flex-container footer">
+</footer>
+    
+    
+</body>
+
+</html>

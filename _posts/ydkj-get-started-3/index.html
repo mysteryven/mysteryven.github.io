@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<title>
+    YDKJ 2th - Get Started - Chapter 3 笔记 - Mysteryven&rsquo;s Blog
+</title>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.6462c34240368b7550fdd995726445214c2f5fd7da600076fe14673d57f05250.css" integrity="sha256-ZGLDQkA2i3VQ/dmVcmRFIUwvX9faYAB2/hRnPVfwUlA=" crossorigin="anonymous" media="screen">
+
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="YDKJ 2th - Get Started - Chapter 3 笔记"/>
+<meta name="twitter:description" content="本系列是《你不知道的 JS》第二版的读书笔记，本笔记属于 Get Started 一书的第二章，书籍传送门：click me"/>
+
+<meta property="og:title" content="YDKJ 2th - Get Started - Chapter 3 笔记" />
+<meta property="og:description" content="本系列是《你不知道的 JS》第二版的读书笔记，本笔记属于 Get Started 一书的第二章，书籍传送门：click me" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mysteryven.com/_posts/ydkj-get-started-3/" />
+<meta property="article:published_time" content="2020-03-20T16:25:25+08:00" />
+<meta property="article:modified_time" content="2020-03-20T16:25:25+08:00" />
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-171080709-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+
+    
+    
+    
+    <title>
+        
+        YDKJ 2th - Get Started - Chapter 3 笔记
+        
+    </title>
+</head>
+
+<body>
+    
+    
+    <header class="wrap flex-container">
+        <h1>YDKJ 2th - Get Started - Chapter 3 笔记</h1>
+    </header>
+    
+    <main class="wrap">
+        
+        <article role="article" class="flex-container"><p>本系列是《你不知道的 JS》第二版的读书笔记，本笔记属于 Get Started 一书的第二章，书籍传送门：<a href="https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/ch2.md">click me</a></p>
+<p>我们经常使用 spread 操作符（&hellip;），比如在进行数组浅拷贝的时候：<code>a = [...[1, 2, 3]]</code>; spread 操作符的作用是 <em>consuming iterators</em>，也就是只要是个 iterator ，就可以使用这个操作符。<code>for...of</code> 也是用来遍历 iterator 的。</p>
+<p>除了数组外，常见的可以生成 iterator 的还有 <code>Map</code>、<code>Set</code>、 <code>String</code>。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">map</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Map</span>();
+<span style="color:#a6e22e">map</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#ae81ff">1</span>);
+<span style="color:#a6e22e">map</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#ae81ff">2</span>);
+
+<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> [<span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>] <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">map</span>) {
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">key</span><span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">value</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+} <span style="color:#75715e">// a: 1   b: 2
+</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">str</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello world&#34;</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>([...<span style="color:#a6e22e">str</span>]);
+<span style="color:#75715e">// [&#34;h&#34;, &#34;e&#34;, &#34;l&#34;, &#34;l&#34;, &#34;o&#34;, &#34; &#34;, &#34;w&#34;, &#34;o&#34;, &#34;r&#34;, &#34;l&#34;, &#34;d&#34;]
+</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">set</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Set</span>();
+<span style="color:#a6e22e">set</span>.<span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">1</span>);
+<span style="color:#a6e22e">set</span>.<span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">2</span>);
+<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">value</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">set</span>) {
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">value</span>);
+} <span style="color:#75715e">// 1  2
+</span></code></pre></div><p>另外，经过一些扩展，我们还可以在对象中使用它：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">iteratorObj</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>,
+  <span style="color:#a6e22e">b</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>,
+  <span style="color:#a6e22e">c</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>,
+  [<span style="color:#a6e22e">Symbol</span>.<span style="color:#a6e22e">iterator</span>]() {
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">keys</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">keys</span>(<span style="color:#a6e22e">obj</span>);
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">len</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">keys</span>.<span style="color:#a6e22e">length</span>;
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">step</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">iterator</span> <span style="color:#f92672">=</span> {
+      <span style="color:#a6e22e">next</span>() {
+        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">len</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>) {
+          <span style="color:#66d9ef">return</span> { <span style="color:#a6e22e">value</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">undefined</span>, <span style="color:#a6e22e">done</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span> };
+        } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">step</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">len</span>) {
+          <span style="color:#66d9ef">return</span> { <span style="color:#a6e22e">value</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">obj</span>[<span style="color:#a6e22e">keys</span>[<span style="color:#a6e22e">len</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]], <span style="color:#a6e22e">done</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span> };
+        }
+
+        <span style="color:#66d9ef">return</span> { <span style="color:#a6e22e">value</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">obj</span>[<span style="color:#a6e22e">keys</span>[<span style="color:#a6e22e">step</span><span style="color:#f92672">++</span>]], <span style="color:#a6e22e">done</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span> };
+      }
+    };
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">iterator</span>;
+  }
+};
+
+<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">v</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">iteratorObj</span>) {
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">v</span>); <span style="color:#75715e">// 1, 2, 3
+</span><span style="color:#75715e"></span>}
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(...<span style="color:#a6e22e">iterator</span>); <span style="color:#75715e">// 1, 2, 3
+</span></code></pre></div><p>面试中，老是被问闭包是什么，现在有标准答案了：</p>
+<blockquote>
+<p>Closure is when a function remembers and continues to access variables from outside its scope, even when the function is executed in a different scope.</p>
+</blockquote>
+<p>闭包是一个函数，尽管它不在当前作用域执行，依然可以继续访问在它作用域外部的变量。另外还有一点值得主要：闭包的外围不一定只是函数，还可能是 <code>for</code> 循环。</p>
+<p>JS 中的 <code>this</code> 功能非常强大，但又非常令人困扰，很多人理解 <code>this</code> 是指向函数本身、指向实例，这都是不对的。this 是动态的，最好被定义为执行执行上下文（excution context）。</p>
+<p><code>Object.create(null)</code> 创建了一个没有原型链的对象（standalone object），某些时候很有用。</p>
+<p>关于 <code>this</code>，还有一个很令我困惑的示例：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">homework</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">topic</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;CSS&#34;</span>,
+  <span style="color:#a6e22e">study</span>() {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`</span><span style="color:#e6db74">Please study </span><span style="color:#e6db74">${</span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">topic</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+  }
+};
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">jsHomework</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">create</span>(<span style="color:#a6e22e">homework</span>);
+<span style="color:#a6e22e">jsHomework</span>.<span style="color:#a6e22e">topic</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JS&#34;</span>;
+<span style="color:#a6e22e">jsHomework</span>.<span style="color:#a6e22e">study</span>();
+</code></pre></div><p>你猜最后一行输出什么？</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Please study JS
+</code></pre></div><p>没有输出 CSS 会不会让你感觉比较奇怪？事实上，尽管我们通过原型链调用的 <code>study</code> 方法委托到父类身上，但是 <code>this</code> 却指向被保留了下来。（method calls on objects which delegate through the prototype chain still maintain the expected this）。</p>
+<p>对比而言，Java 就不会了，这算是 JS 的一个特色：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java"><span style="color:#75715e">// Homework.java
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Homework</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> String topic <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Maven&#34;</span><span style="color:#f92672">;</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">study</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Please study &#34;</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">topic</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#75715e">// JSHomework.java
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JSHomework</span> <span style="color:#66d9ef">extends</span> Homework <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> String topic <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Java&#34;</span><span style="color:#f92672">;</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[</span><span style="color:#f92672">]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        JSHomework jsHomework <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> JSHomework<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+        jsHomework<span style="color:#f92672">.</span><span style="color:#a6e22e">study</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#75715e">// Please study Maven
+</span></code></pre></div><p>以上就是本节笔记的全部内容。</p></article>
+        
+
+        
+        
+        <nav role="navigation" class="flex-container bottom-menu">
+            
+<hr />
+<p>
+
+
+    
+
+    
+        
+            <a href="/">首页</a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/articles">喜欢的文章</a>
+        
+            &#183; 
+            <a href="/posts/">想写的文章</a>
+        
+            &#183; 
+            <a href="/about">我是谁?</a>
+        
+    
+    
+    
+
+</p>
+        </nav>
+        
+        
+    </main>
+    
+    <footer class="flex-container footer">
+</footer>
+    
+    
+</body>
+
+</html>

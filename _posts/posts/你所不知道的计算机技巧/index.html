@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<title>
+    你所不知道的计算机技巧 - Mysteryven&rsquo;s Blog
+</title>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.6462c34240368b7550fdd995726445214c2f5fd7da600076fe14673d57f05250.css" integrity="sha256-ZGLDQkA2i3VQ/dmVcmRFIUwvX9faYAB2/hRnPVfwUlA=" crossorigin="anonymous" media="screen">
+
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="你所不知道的计算机技巧"/>
+<meta name="twitter:description" content=""/>
+
+<meta property="og:title" content="你所不知道的计算机技巧" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mysteryven.com/_posts/posts/%E4%BD%A0%E6%89%80%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E5%B7%A7/" />
+<meta property="article:published_time" content="2018-11-15T22:15:40+00:00" />
+<meta property="article:modified_time" content="2018-11-15T22:15:40+00:00" />
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-171080709-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+
+    
+    
+    
+    <title>
+        
+        你所不知道的计算机技巧
+        
+    </title>
+</head>
+
+<body>
+    
+    
+    <header class="wrap flex-container">
+        <h1>你所不知道的计算机技巧</h1>
+    </header>
+    
+    <main class="wrap">
+        
+        <article role="article" class="flex-container"><h1 id="linux-篇">Linux 篇</h1>
+<h2 id="linux-程序后台运行与关闭以-anywhere-为例">linux 程序后台运行与关闭（以 anywhere 为例）</h2>
+<h3 id="下载">下载</h3>
+<p><code>yarn global add anywhere</code></p>
+<h3 id="命令">命令</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">anywhere&amp; <span style="color:#75715e"># 后台运行</span>
+jobs      <span style="color:#75715e"># 查看当时哪些在后台运行</span>
+fg        <span style="color:#75715e"># 切换回后台命令</span>
+ctrl + c  <span style="color:#75715e"># 关闭</span>
+ctrl + a  <span style="color:#75715e"># 回到一个命令的开始</span>
+ctrl + e  <span style="color:#75715e"># 回到末尾</span>
+!$        <span style="color:#75715e"># 代指上一次命令的最后一个字符串</span>
+sudo !!   <span style="color:#75715e"># 忘记加sudo，可以用这个命令重新执行</span>
+!xxx      <span style="color:#75715e"># 重新执行上一次这命令，比如 !vi 执行最近的一次 vi， !cd 执行最近的一次 cd</span>
+cd -      <span style="color:#75715e"># 最近的两次 cd 目录切换</span>
+esc + .   <span style="color:#75715e"># 把上一次最后一个参数打下来</span>
+!!:gs/old/new <span style="color:#75715e"># 替换上一条命令的 old 为 new</span>
+&gt; hi.html <span style="color:#75715e"># 快速创建文件</span>
+man ascii <span style="color:#75715e"># 快速查看 ascii</span>
+</code></pre></div><h2 id="tree-忽略不想被展示的文件夹">tree 忽略不想被展示的文件夹</h2>
+<p><code>tree -I [dir_name]</code></p>
+<h2 id="本地文件传到服务器">本地文件传到服务器</h2>
+<p><code>rz</code></p>
+<h2 id="服务器文件下载到本地">服务器文件下载到本地</h2>
+<p>比如我想下载 user 文件夹到本地</p>
+<pre><code>tar -cvf  user.tar user/  # compress
+sz # download
+</code></pre><p>完成之后就可以去你的电脑里面寻找一下了，它的文件名是 「user.tar」</p>
+<h2 id="svn-display-special-users-commits">svn display special user&rsquo;s commits</h2>
+<p><code>svn log | sed -n '/USERNAME/,/-----$/ p'</code></p>
+<h2 id="svn-back-to-special-revision">svn back to special revision</h2>
+<p><code>svn merge -rHEAD:9</code></p>
+<h1 id="vim-篇">Vim 篇</h1>
+<p><code>&gt;G</code> 增加此行到文档末尾的缩进层级</p>
+<h1 id="vpn-篇">VPN 篇</h1>
+<h2 id="shadowsocks-目前在用">shadowsocks (目前在用）</h2>
+<p><a href="https://shadowsocks.nu/">https://shadowsocks.nu/</a></p>
+<h2 id="蓝灯-很垃圾估计以后不会用了">蓝灯 （很垃圾，估计以后不会用了）</h2>
+<p><a href="https://github.com/getlantern/lantern">https://github.com/getlantern/lantern</a></p>
+<h2 id="云梯">云梯</h2>
+<p><a href="https://www.yuntipub.com/">https://www.yuntipub.com/</a></p>
+<h2 id="影梭">影梭</h2>
+<p><a href="https://i.ssvpn.me/blog/id=6">https://i.ssvpn.me/blog/id=6</a></p>
+<h2 id="枫叶主机">枫叶主机</h2>
+<p><a href="https://www.fyzhuji.com/shadow.html">https://www.fyzhuji.com/shadow.html</a></p>
+<h2 id="佛跳墙">佛跳墙</h2>
+<p><a href="https://i.ssvpn.me/">https://i.ssvpn.me/</a></p></article>
+        
+
+        
+        
+        <nav role="navigation" class="flex-container bottom-menu">
+            
+<hr />
+<p>
+
+
+    
+
+    
+        
+            <a href="/">首页</a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/articles">喜欢的文章</a>
+        
+            &#183; 
+            <a href="/posts/">想写的文章</a>
+        
+            &#183; 
+            <a href="/about">我是谁?</a>
+        
+    
+    
+    
+
+</p>
+        </nav>
+        
+        
+    </main>
+    
+    <footer class="flex-container footer">
+</footer>
+    
+    
+</body>
+
+</html>
