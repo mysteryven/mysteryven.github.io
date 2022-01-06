@@ -30,7 +30,8 @@
 添加于 2021-09-04，我犯错了好几条，难过。
 6: Build your own React
 这篇文章写得极好，300 行代码实现一个 React，让我们很快的梳理整个流程。
-图解 React  添加于 2021-11-28，我跟着这个教程熟悉了一遍 React，感觉还可以，比视频教程好。</description>
+图解 React  添加于 2021-11-28，我跟着这个教程熟悉了一遍 React，感觉还可以，比视频教程好。
+build your own webpack  添加于 2021-01-06 这位荷兰小哥的英语挺难听懂的，原来学英语真的没必要太纠结口音。。</description>
     </item>
     
     <item>
@@ -39,8 +40,7 @@
       <pubDate>Mon, 30 Aug 2021 09:39:53 +0800</pubDate>
       
       <guid>https://mysteryven.com/posts/</guid>
-      <description>下面是我想在掘金写的主题：
- TS 为什么会引入 never 类型 WeakRef 的作用 TS 中设计模式（更新中） Trie 树 TreeMap 树 浮点数为什么不准确 useEffect vs useLayout &amp;hellip;  </description>
+      <description>你可以在这个看板实时查看查看我想更新的主题。</description>
     </item>
     
     <item>
